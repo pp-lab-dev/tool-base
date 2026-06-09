@@ -1,0 +1,279 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #172018;
+  background: #f7f5ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  display: grid;
+  gap: 24px;
+  min-height: 100vh;
+  padding: 48px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.top-nav a {
+  padding: 8px 10px;
+  font-weight: 700;
+  color: #475249;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.top-nav a.active {
+  color: #f7f5ef;
+  background: #172018;
+}
+
+.hero {
+  align-self: end;
+  max-width: 720px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 16px;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #57735d;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475249;
+}
+
+.sample-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.panel-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.settings-toolbar {
+  display: grid;
+  gap: 12px;
+}
+
+.panel-stack p {
+  margin: 0;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 12px 18px;
+  margin: 0;
+}
+
+.config-grid dt {
+  font-weight: 700;
+}
+
+.config-grid dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.error-text {
+  color: #9f1d20;
+}
+
+.ui-button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.ui-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ui-button-size-default {
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.ui-button-size-sm {
+  min-height: 36px;
+  padding: 0 14px;
+}
+
+.ui-button-variant-default {
+  color: #f7f5ef;
+  background: #172018;
+  border: 1px solid #172018;
+}
+
+.ui-button-variant-default:hover {
+  background: #263629;
+}
+
+.ui-button-variant-secondary {
+  color: #172018;
+  background: #e5ebdf;
+  border: 1px solid #d8ddd4;
+}
+
+.ui-button-variant-secondary:hover {
+  background: #dbe5d2;
+}
+
+.ui-button-variant-ghost {
+  color: #475249;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.ui-button-variant-ghost:hover {
+  background: #edf1e8;
+}
+
+.ui-card {
+  display: grid;
+  gap: 18px;
+  align-self: start;
+  max-width: 760px;
+  padding: 24px;
+  color: #172018;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(244, 247, 240, 0.96)
+  );
+  border: 1px solid #d8ddd4;
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(20, 31, 20, 0.08);
+}
+
+.ui-card-header {
+  display: grid;
+  gap: 6px;
+}
+
+.ui-card-title {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.ui-card-description {
+  margin: 0;
+  line-height: 1.6;
+  color: #5b685d;
+}
+
+.ui-card-content {
+  display: grid;
+  gap: 14px;
+}
+
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.ui-badge-variant-default {
+  color: #f7f5ef;
+  background: #314435;
+}
+
+.ui-badge-variant-outline {
+  color: #475249;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid #d8ddd4;
+}
+
+.ui-badge-variant-success {
+  color: #20422c;
+  background: #d8efe0;
+}
+
+.ui-input {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  color: #172018;
+  background: #ffffff;
+  border: 1px solid #d8ddd4;
+  border-radius: 10px;
+}
+
+.ui-input:focus {
+  outline: 2px solid rgba(49, 68, 53, 0.18);
+  outline-offset: 0;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 28px;
+  }
+
+  .settings-toolbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) {
+  .settings-toolbar {
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: center;
+  }
+}

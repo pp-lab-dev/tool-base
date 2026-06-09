@@ -1,0 +1,12 @@
+{
+  "features": {
+    "sampleApi": true
+  },
+  "server": {
+    "name": "tool-base",
+    "port": 34577
+  },
+  "web": {
+    "title": "Tool Base"
+  }
+}
