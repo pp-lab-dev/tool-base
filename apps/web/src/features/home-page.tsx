@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -18,22 +17,8 @@ export const HomePage = () => {
 
   return (
     <>
-      <section className="hero">
-        <p className="eyebrow">Tool Base</p>
-        <h1>Base architecture sample</h1>
-        <p className="summary">
-          A minimal server, web, config, routing, query, and API scaffold with
-          no product logic attached.
-        </p>
-        <div className="hero-actions">
-          <Badge variant="success">shadcn/ui sample</Badge>
-          <Badge variant="outline">TanStack Query</Badge>
-        </div>
-        <Button onClick={() => sampleQuery.refetch()} type="button">
-          Refresh sample API
-        </Button>
-      </section>
-
+      <h1 className="page-title">Home</h1>
+      <Button>Click me</Button>
       <Card>
         <CardHeader>
           <CardTitle>Sample API</CardTitle>

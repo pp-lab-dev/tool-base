@@ -4,6 +4,10 @@ Minimal base architecture for a new tool inside this repository. This folder is
 intentionally isolated from the root workspace so it can be copied, evolved, or
 promoted later without changing the current `pp-reup-video` app.
 
+## Documentation
+
+Project documentation lives in [docs/SUMMARY.md](docs/SUMMARY.md).
+
 ## Structure
 
 ```txt
